@@ -3,19 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New Year Countdown</title>
+  <title>Отсчет времени До Нового Года</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti"></script>
 </head>
 <body>
   <div class="container">
-    <h1>Time Until New Year 🎉</h1>
-    <div id="countdown">
-      <div><span id="days">00</span> Days</div>
-      <div><span id="hours">00</span> Hours</div>
-      <div><span id="minutes">00</span> Minutes</div>
-      <div><span id="seconds">00</span> Seconds</div>
-    </div>
-    <canvas id="confetti"></canvas>
+    <header>
+      <h1>Отсчет времени до Нового Года!</h1>
+      <p class="subtitle">Осталось всего:</p>
+    </header>
+    <main>
+      <div class="image-container">
+        <img src="image.png" alt="New Year Image" id="countdown-image">
+      </div>
+      <div id="countdown">
+        <div><span id="days">00</span> Дни</div>
+        <div><span id="hours">00</span> Часы</div>
+        <div><span id="minutes">00</span> Минуты</div>
+        <div><span id="seconds">00</span> Секунды</div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 - All Rights Reserved</p>
+    </footer>
   </div>
   <script src="app.js"></script>
 </body>
