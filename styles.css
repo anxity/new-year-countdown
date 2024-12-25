@@ -35,23 +35,21 @@ h1 {
   justify-content: space-around;
   font-size: 2em;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 
 #countdown div {
   background: rgba(255, 255, 255, 0.2);
   padding: 20px;
   border-radius: 10px;
+  margin: 10px;
+  flex-grow: 1;
+  flex-basis: 100px;
 }
 
 #countdown span {
   display: block;
   font-size: 2.5em;
-}
-
-footer {
-  margin-top: 30px;
-  font-size: 1em;
-  color: #bdc3c7;
 }
 
 /* Snow and confetti effects */
@@ -79,13 +77,55 @@ footer {
   animation-duration: 20s;
   left: 50%;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .subtitle {
+    font-size: 1.2em;
+  }
+
+  #countdown {
+    font-size: 1.5em;
+    flex-direction: column;
+  }
+
+  #countdown div {
+    padding: 15px;
+    margin: 5px;
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .subtitle {
+    font-size: 1em;
+  }
+
+  #countdown {
+    font-size: 1.2em;
+    flex-direction: column;
+  }
+
+  #countdown div {
+    padding: 10px;
+    margin: 3px;
+  }
+}
 /* Стили для картинки */
 .image-container {
   margin-bottom: 20px;
 }
 
 #countdown-image {
-  width: 80%; /* Размер картинки, можно настроить */
+  width: 50%; /* Размер картинки, можно настроить */
   max-width: 600px; /* Максимальная ширина */
   height: auto;
   border-radius: 10px;
